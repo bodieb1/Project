@@ -6,6 +6,9 @@ public class Crash {
 	public static void addCatagory(String Catagory, String Content) {
 		
 	}
+	/**
+     * tells what type of crash this is
+     */
 	public static void Fatal(String exception) {
 		if(exception == null) {
 			new TimeStamp("ERROR", "The ExceptionType is currently unavalible");	
@@ -29,6 +32,9 @@ public class Crash {
 			}
 		}
 	}
+	/**
+     * Gets System Info
+     */
 	public static void getSysData() {
 		new TimeStamp("ERROR", "Getting System Information");
 		SystemInfo.getSystemErrorInfo();

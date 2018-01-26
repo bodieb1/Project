@@ -3,7 +3,9 @@ package com.mangodev;
 import java.io.File;
 
 public class SystemInfo {
-	
+	/**
+     * Gets system information
+     */
 	public static void getSystemInfo() {
 		String nameOS = "os.name";  
 		String versionOS = "os.version";  
@@ -36,6 +38,9 @@ public class SystemInfo {
 			System.out.println("Usable space (bytes): " + root.getUsableSpace());		
 	    }
 	}
+	/**
+     *Gets system info in an error format
+     */
 	public static void getSystemErrorInfo() {
 		String nameOS = "os.name";  
 		String versionOS = "os.version";  
@@ -53,7 +58,7 @@ public class SystemInfo {
 		/* This will return Long.MAX_VALUE if there is no preset limit */
 		long maxMemory = Runtime.getRuntime().maxMemory();
 		/* Maximum amount of memory the JVM will attempt to use */
-		System.out.println("Maximum memory (bytes): " + 
+		System.err.println("Maximum memory (bytes): " + 
 				(maxMemory == Long.MAX_VALUE ? "no limit" : maxMemory));
 		/* Total memory currently available to the JVM */
 		System.err.println("Total memory available to JVM (bytes): " + 
