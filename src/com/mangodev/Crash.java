@@ -4,12 +4,14 @@ import java.io.IOException;
 
 public class Crash {
 	public static void addCatagory(String Catagory, String Content) {
-		
+		new TimeStamp("ERROR", Catagory);
+		new TimeStamp("ERROR", Content);
+		new TimeStamp("ERROR", "_______________________________________________");
 	}
 	/**
      * tells what type of crash this is
      */
-	public static void Fatal(String exception) {
+	private static void Fatal(String exception) {
 		if(exception == null) {
 			new TimeStamp("ERROR", "The ExceptionType is currently unavalible");	
 		} else if(exception == "ArithmeticException()") {
@@ -35,7 +37,7 @@ public class Crash {
 	/**
      * Gets System Info
      */
-	public static void getSysData() {
+	private static void getSysData() {
 		new TimeStamp("ERROR", "Getting System Information");
 		SystemInfo.getSystemErrorInfo();
 	}

@@ -1,6 +1,5 @@
 package com.mangodev;
 
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -13,7 +12,8 @@ public class TimeStamp {
 		} else if(messageType == "INFO") {
 			System.out.println("[" + timeStamp + "][SYSTEM/" + messageType + "] " + info + "\n");
 		} else {
-			new Crash("IOException()", "Console Exception");
+			Crash c = new Crash("IOException()", "Console Exception");
+			c.addCatagory("TEST", "This is a test catagory");
 			System.exit(1);
 			
 		}			
