@@ -3,8 +3,9 @@ package com.mangodev;
 import java.io.IOException;
 
 public class Crash {
-	public static void addCatagory(String Catagory, String Content) {
-		
+	public String addCatagory(String Catagory, String Content) {
+		String catagory = "--Catagory--\n--" + Catagory + "--\n" + Content;
+		return catagory;
 	}
 	public static void Fatal(String exception) {
 		if(exception == null) {

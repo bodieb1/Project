@@ -15,7 +15,7 @@ public class Main {
 	}
 	public static void Init() {
 		new TimeStamp("INFO", "The Initalization phase has started");
-		new TimeStamp("Infods", "FOO");
+		new TimeStamp("INFO", "FOO");
 		new TimeStamp("INFO", "GETTING WIFI INFO");
 	}
 	public static void PostInit() {
