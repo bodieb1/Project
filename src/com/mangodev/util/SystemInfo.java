@@ -1,4 +1,4 @@
-package com.mangodev;
+package com.mangodev.util;
 
 import java.io.File;
 
